@@ -1,0 +1,30 @@
+html,
+body,
+#header-image {
+  height: 100%;
+}
+
+#header-image {
+  background-image: url("../images/volcano-extra-small.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  #header-image {
+    background-image: url("../images/volcano-small.gif");
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #header-image {
+    background-image: url("../images/volcano-medium.gif");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #header-image {
+    background-image: url("../images/volcano-large.gif");
+  }
+}

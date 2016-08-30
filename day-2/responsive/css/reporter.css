@@ -6,11 +6,13 @@ body:after {
   font-weight: bold;
   font-size: 300%;
   color: #fff;
+
+  /* Extra small only */
   background-color: #aaa;
   content: "Extra small screens (less than 768px)";
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 768px) {
   body:after {
     background-color: #777;
     content: "Small screens (768px - 992px)";
