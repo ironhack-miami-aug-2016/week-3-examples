@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Mississippi | Like Amazon but better </title>
+  </head>
+  <body>
+    <h1> Mississippi </h1>
+
+    <p> Like Amazon but American. </p>
+
+    <ul>
+      <% @products_array.each do |the_product| %>
+        <li>
+          <a href="/products/<%= the_product[:item_name] %>">
+            <%= the_product[:title] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Mississippi | Like Amazon but better </title>
+  </head>
+  <body>
+    <h1> Mississippi </h1>
+
+    <p>
+      The product you were looking for
+      <em> "<%= @item %>" </em>
+      wasn't found.
+      You definitely will NOT find it on Amazon.
+    </p>
+
+    <p> Why don't you select one of our other products? </p>
+
+    <ul>
+      <% @products_array.each do |the_product| %>
+        <li>
+          <a href="/products/<%= the_product[:item_name] %>">
+            <%= the_product[:title] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
