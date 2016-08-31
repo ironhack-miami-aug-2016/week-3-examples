@@ -12,12 +12,16 @@
     <ul>
       <% @products_array.each do |the_product| %>
         <li>
-          <a href="/products/<%= the_product[:item_name] %>">
-            <%= the_product[:title] %>
+          <a href="/products/<%= the_product.item_name %>">
+            <%= the_product.title %>
           </a>
         </li>
       <% end %>
     </ul>
+
+    <a href="/products/new">
+      Post a new product
+    </a>
 
   </body>
 </html>

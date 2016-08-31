@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Mississippi | Like Amazon but better </title>
+  </head>
+  <body>
+    <h1> Mississippi </h1>
+
+    <h2> Post a new product </h2>
+
+    <form method="post" action="/products">
+
+      <div>
+        <label for="item_name"> Item Name: </label>
+        <input type="text" name="item_name" placeholder="fried-chicken" id="item_name">
+      </div>
+
+      <div>
+        <label for="title"> Title: </label>
+        <input type="text" name="title" placeholder="Lillian's Fried Chicken" id="title">
+      </div>
+
+      <div>
+        <label for="description"> Description: </label>
+        <textarea name="description" placeholder="Finger lickin' good fried chicken from Nashville." id="description"></textarea>
+      </div>
+
+      <div>
+        <label for="image"> Image URL: </label>
+        <input type="url" name="image" placeholder="http://www.example.com/chicken.gif" id="image">
+      </div>
+
+      <button type="submit">
+        Save your product
+      </button>
+
+    </form>
+
+  </body>
+</html>
