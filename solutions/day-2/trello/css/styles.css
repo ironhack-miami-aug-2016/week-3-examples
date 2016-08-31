@@ -1,0 +1,85 @@
+/*.col-sm-4,
+.col-sm-9,
+.col-sm-12,
+.col-sm-6,
+.col-sm-3 {
+  border: 1px dotted black;
+}*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+
+/* Undoing Bootstrap navbar styles */
+.board-header {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0;
+}
+
+/* Undoing Bootstrap navbar styles */
+.board-header .navbar-nav > li > a,
+.board-header .navbar-brand {
+  color: #f6f6f6;
+}
+
+.header-logo {
+  margin-top: 9px;
+}
+
+.board-header .navbar-brand {
+  font-weight: bold;
+}
+
+
+.list-wrapper {
+  background-color: #e2e4e6;
+  padding: 10px 10px 1px;
+  border-radius: 5px;
+}
+
+.list-wrapper h3 {
+  margin-top: 5px;
+}
+
+.list-column {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.card-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.card-list li {
+  background-color: #fff;
+  color: #4d4d4d;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.card-label {
+  width: 55px;
+  height: 10px;
+  background-color: #aaa;
+  display: block;
+  border-radius: 4px;
+}
+
+.card-label.purple {
+  background-color: #c377e0;
+}
+
+.card-label.green {
+  background-color: #61bd4f;
+}
