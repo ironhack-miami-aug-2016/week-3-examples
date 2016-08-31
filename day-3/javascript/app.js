@@ -16,3 +16,14 @@ console.log( countColors("teal", colorArray) === 3 );
 
 console.log( countColors("green", colorArray) === 0 );
 console.log( countColors("navy blue", colorArray) === 0 );
+
+
+
+// caps_colors = color_array.map do |the_color|
+var capsColors = colorArray.map(function (theColor) {
+  // the_color.upcase
+  return theColor.toUpperCase();
+}); // end
+
+// p caps_colors
+console.log(capsColors);
