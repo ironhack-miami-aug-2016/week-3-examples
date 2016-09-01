@@ -1,5 +1,8 @@
 // app.js
 
+"use strict";
+
+
 // require_relative("lib/animal.rb")
 var Animal = require("./lib/animal.js");
 
