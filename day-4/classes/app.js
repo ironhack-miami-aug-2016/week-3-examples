@@ -1,35 +1,24 @@
 // app.js
 
-var dymitri = {
-  name: "Dymitri",
-  noise: "Huff...",
-  makeNoise: function () {
-      //             @name                  @noise
-    console.log( this.name + " says: " + this.noise );
-  },
-  shout: function () {
-      //             @noise
-    console.log( this.noise.toUpperCase() );
-  }
-};
+// require_relative("lib/animal.rb")
+var Animal = require("./lib/animal.js");
 
+
+// dymitri = Animal.new("Dymitri", "Huff...")
+var dymitri = new Animal("Dymitri", "Huff...");
+
+// dymitri.make_noise
 dymitri.makeNoise();
+
+// dymitri.shout
 dymitri.shout();
 
 
+// chewie = Animal.new("Chewie", "Woof")
+var chewie = new Animal("Chewie", "Woof");
 
-var chewie = {
-  name: "Chewie",
-  noise: "Woof",
-  makeNoise: function () {
-      //             @name                  @noise
-    console.log( this.name + " says: " + this.noise );
-  },
-  shout: function () {
-      //             @noise
-    console.log( this.noise.toUpperCase() );
-  }
-};
-
+// chewie.make_noise
 chewie.makeNoise();
+
+// chewie.shout
 chewie.shout();
